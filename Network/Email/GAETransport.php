@@ -22,10 +22,6 @@ class GAETransport extends AbstractTransport {
 	 */
 	public function send(CakeEmail $email) {
 
-		if (!array_key_exists('APPENGINE_RUNTIME',$_SERVER)) { //not google app engine
-			throw new Exception("Mail Environment Error: The GAETransport can only run on Google App Engine");
-		}
-		
 		$gaeMail = new google\appengine\api\mail\Message();
 
 		$headers = $email->getHeaders(array('from', 'sender', 'replyTo', 'readReceipt', 'returnPath', 'to', 'cc', 'subject', 'bcc'));
