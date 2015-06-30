@@ -15,7 +15,7 @@ Installation + Configuration
 
 3. Lastly, update /app/Config/email.php to have at least the following
 
-
+```php
 <?php
  
 class EmailConfig {
@@ -27,3 +27,7 @@ class EmailConfig {
 	 
 }
 
+```
+
+
+Finish!
