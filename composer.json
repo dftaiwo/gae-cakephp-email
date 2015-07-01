@@ -1,7 +1,6 @@
 {
     "name": "inits/gae-cakephp-email",
     "description": "A Mail Transport Class written for CakePHP + Google App Engine Setups.",
-    "type": "library",
     "license": "GPL 3.0",
     "authors": [
         {
@@ -9,6 +8,6 @@
             "email": "dftaiwo@gmail.com"
         }
     ],
-    "minimum-stability": "RC",
+    "minimum-stability": "stable",
     "require": {}
 }
